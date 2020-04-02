@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Return to dashboard</a>
+    </nav>
+    <input id="recipe-name" type="text" placeholder="Your recipe name here">
+    <textarea name="recipe-steps" id="recipe-steps" placeholder="Your steps here"></textarea>
+    <h3>
+        Ingredients
+    </h3>
+    <div class="ingredients-container" id="ingredients-container">
+
+    </div>
+
+    <form class="ingredients-form" id="ingredients-form">
+        <input type="text" id="ingredient-name" placeholder="Add ingredient">
+        <button id="add-ingredient">Add</button>
+    </form>
+    <div class="error" id="error"></div>
+    <h4>Danger zone</h4>
+    <button id="delete-recipe">Delete recipe</button>
+
+    <script src="uuidv4.js"></script>
+    <script src="functions.js"></script>
+    <script src="recipe.js"></script>
+</body>
+
+</html>
